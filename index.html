@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -83,14 +83,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>git –version 查看当前git版本<br>git config –list 查看当前git配置信息<br>git config –list –global git通用配置信息<br>git config user.name 获取单独的配置信息(name)<br>git config user.email 获取单独的配置信息(email)<br>git config –global user.name cxl 配置name<br>git config –global user.eamil xxx@xx.com 配置email<br>git config –global add user.name cxl user.email xx@xx.com 同时配置多个参数<br>git config –global unset user.name cxl 删除配置</p>
-<h2 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h2><p>git config –global alias.st status</p>
-<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>git init 将一个文件夹设置为git代码仓库<br>git status 查看仓库状态<br>git add <file> 提交文件到暂存区<br>git add . 提交所有改动到暂存区<br>git commit -m “提交说明” 提交到仓库<br>git commit –amend -m “提交说明” 追加修改<br>git log 查看提交记录<br>git reflog 查看提交记录，即使版本已回退<br>git shortlog 根据提交者名字进行分组，显示每个开发者的所有commit记录<br>git diff <file> 查看文件变化<br>git diff 查看所有文件变化<br>git diff HEAD 与上一commit节点的差异<br>git diff HEAD^ 与上上commit节点的差异<br>git blame <file> 追溯一个指定文件的历史修改记录<br>gitk 查看图形化的Log记录<br>git checkout <file> 修改文件之后，git add指令之前，抛弃当前本地所有修改，恢复到上次最后提交版本；执行add指令将代码提交到暂存区后，再修改该文件，然后执行checkout指令，则会将该文件恢复到执行add操作后的初始状态，即恢复add后的所有修改。<br>git reset HEAD <file> 将文件移出暂存区<br>git reset –hard HEAD^ 回退到上一个版本（HEAD^^：上上个版本， HEAD~100：上100个版本）<br>git reset –hard commit id 回退到指定版本版本<br>git rm <file> 删除文件，不需要再执行git add,可直接执行git commit</file></file></file></file></file></file></p>
+        <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>git --version 查看当前git版本<br>git config --list 查看当前git配置信息<br>git config --list --global git通用配置信息<br>git config user.name 获取单独的配置信息(name)<br>git config user.email 获取单独的配置信息(email)<br>git config --global user.name cxl 配置name<br>git config --global user.eamil xxx@xx.com 配置email<br>git config --global add user.name cxl user.email xx@xx.com 同时配置多个参数<br>git config --global unset user.name cxl 删除配置</p>
+<h2 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h2><p>git config --global alias.st status</p>
+<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>git init 将一个文件夹设置为git代码仓库<br>git status 查看仓库状态<br>git add <file> 提交文件到暂存区<br>git add . 提交所有改动到暂存区<br>git commit -m “提交说明” 提交到仓库<br>git commit --amend -m “提交说明” 追加修改<br>git log 查看提交记录<br>git reflog 查看提交记录，即使版本已回退<br>git shortlog 根据提交者名字进行分组，显示每个开发者的所有commit记录<br>git diff <file> 查看文件变化<br>git diff 查看所有文件变化<br>git diff HEAD 与上一commit节点的差异<br>git diff HEAD^ 与上上commit节点的差异<br>git blame <file> 追溯一个指定文件的历史修改记录<br>gitk 查看图形化的Log记录<br>git checkout <file> 修改文件之后，git add指令之前，抛弃当前本地所有修改，恢复到上次最后提交版本；执行add指令将代码提交到暂存区后，再修改该文件，然后执行checkout指令，则会将该文件恢复到执行add操作后的初始状态，即恢复add后的所有修改。<br>git reset HEAD <file> 将文件移出暂存区<br>git reset --hard HEAD^ 回退到上一个版本（HEAD^^：上上个版本， HEAD~100：上100个版本）<br>git reset --hard commit id 回退到指定版本版本<br>git rm <file> 删除文件，不需要再执行git add,可直接执行git commit</file></file></file></file></file></file></p>
 <h2 id="文件暂存"><a href="#文件暂存" class="headerlink" title="文件暂存"></a>文件暂存</h2><p>git stash 将当前修改暂存起来<br>git stash list 查看当前暂存的内容<br>git stash apply 内容恢复，不会删除stash记录,git stash list还可以看到记录<br>git stash pop 内容回复，删除stash记录,git stash list看不到记录<br>git stash drop 删除stash记录</p>
 <h2 id="创建SSH-Key"><a href="#创建SSH-Key" class="headerlink" title="创建SSH Key"></a>创建SSH Key</h2><p>ssh-keygen -t rsa -b 4096 -C “your_email@example.com”</p>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>git remote add origin git@github.com:xx/gittest.git 关联远程仓库，其中origin就是远程仓库的名字<br>git push -u origin master 推送本地master分支到远程仓库，-u表示将本地master分支与远程master分支关联起来<br>git push 推送到远程仓库<br>git push origin master 推送到远程仓库<br>git pull 拉取最新的代码更新<br>git pull –rebase 拉取最新修改，并且将本地未提交代码作用到最新版本，不会产生多余的Merge Histoey<br>git clone <git地址> 克隆远程仓库到本地</git地址></p>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>git remote add origin git@github.com:xx/gittest.git 关联远程仓库，其中origin就是远程仓库的名字<br>git push -u origin master 推送本地master分支到远程仓库，-u表示将本地master分支与远程master分支关联起来<br>git push 推送到远程仓库<br>git push origin master 推送到远程仓库<br>git pull 拉取最新的代码更新<br>git pull --rebase 拉取最新修改，并且将本地未提交代码作用到最新版本，不会产生多余的Merge Histoey<br>git clone <git地址> 克隆远程仓库到本地</git地址></p>
 <h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><p>git checkout -b dev 创建并切换到dev分支<br>git branch dev 创建dev分支<br>git checkout dev 切换到dev分支<br>git branch 列出所有本地分支<br>git branch -r 列出所有远程分支<br>git branch -a 列出所有本地分支和远程分支<br>git merge dev 合并dev分支到master分支<br>git rebase dev 合并dev分支到master分支,git到时间线会被合并<br>git branch -d dev 删除dev分支<br>git branch -D dev 强行删除dev分支<br>git remote 查看远程分支<br>git remote -v 查看远程分支详细信息<br>git push origin dev 将本地dev分支推送到远程origin仓库</p>
-<h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><p>git tag v1 创建tag，默认记录在最后到提交上<br>git tag v1 <commit id=""> 创建tag，指定在commit id上创建<br>git tag -a v1 -m “version1” 创建带有注释说明到tag，-a指定tag名，-m指定注释说明<br>git tag -a v1 -m “version1” <commit id=""> 创建带有注释说明到tag，-a指定tag名，-m指定注释说明，指定在commit id上创建<br>git tag 查看本地tag<br>git show <tag name=""> 查看指定tag的详细信息<br>git tag -d <tag name=""> 删除tag<br>git push origin <tag name=""> 推送本地Tag到远程<br>git oush origin –tags 推送所有本地Tag到远程</tag></tag></tag></commit></commit></p>
+<h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><p>git tag v1 创建tag，默认记录在最后到提交上<br>git tag v1 <commit id=""> 创建tag，指定在commit id上创建<br>git tag -a v1 -m “version1” 创建带有注释说明到tag，-a指定tag名，-m指定注释说明<br>git tag -a v1 -m “version1” <commit id=""> 创建带有注释说明到tag，-a指定tag名，-m指定注释说明，指定在commit id上创建<br>git tag 查看本地tag<br>git show <tag name=""> 查看指定tag的详细信息<br>git tag -d <tag name=""> 删除tag<br>git push origin <tag name=""> 推送本地Tag到远程<br>git oush origin --tags 推送所有本地Tag到远程</tag></tag></tag></commit></commit></p>
 <h3 id="删除远程Tag"><a href="#删除远程Tag" class="headerlink" title="删除远程Tag"></a>删除远程Tag</h3><ul>
 <li>先删除本地tag<br>git tag -d v2</li>
 <li>再重新push到远程<br>git push oigin :refs/tags/v2</li>
@@ -99,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/25/git-相关/" data-id="cj0qdsjc800025s8fvmyybwo7" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/03/25/git-相关/" data-id="cj0qe72f10001cd8fb9p64g18" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,7 +138,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/25/Mac-快捷键/" data-id="cj0qdsjc100005s8ffbt765if" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/03/25/Mac-快捷键/" data-id="cj0qe72ex0000cd8fcxw1vagz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -183,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/25/hello-world/" data-id="cj0qdsjc500015s8f32y42j0x" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/03/25/hello-world/" data-id="cj0qe72f40002cd8ftukv616q" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,7 +218,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -247,7 +247,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
