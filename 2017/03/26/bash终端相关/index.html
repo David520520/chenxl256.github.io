@@ -3,14 +3,66 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>bash终端相关 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="$echo
+命令echo 表示：输出文本
+1$ echo &quot;hello world&quot;
+输出结果:hello world
+
+$cd
+命令cd表示：进入某文件夹目录，或返回某目录
+1）进入根目录
+1$ cd /
+2）进入用户目录
+1$ cd ~
+3）进入某目录(如下：进入bin目录)
+1$ cd bin
+4）返回到上层目录
+1$ cd ..
+5）返回上上层目录(中间没用空格)
+1$ cd ../..">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bash终端相关">
+<meta property="og:url" content="http://yoursite.com/2017/03/26/bash终端相关/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="$echo
+命令echo 表示：输出文本
+1$ echo &quot;hello world&quot;
+输出结果:hello world
+
+$cd
+命令cd表示：进入某文件夹目录，或返回某目录
+1）进入根目录
+1$ cd /
+2）进入用户目录
+1$ cd ~
+3）进入某目录(如下：进入bin目录)
+1$ cd bin
+4）返回到上层目录
+1$ cd ..
+5）返回上上层目录(中间没用空格)
+1$ cd ../..">
+<meta property="og:updated_time" content="2017-03-26T11:34:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="bash终端相关">
+<meta name="twitter:description" content="$echo
+命令echo 表示：输出文本
+1$ echo &quot;hello world&quot;
+输出结果:hello world
+
+$cd
+命令cd表示：进入某文件夹目录，或返回某目录
+1）进入根目录
+1$ cd /
+2）进入用户目录
+1$ cd ~
+3）进入某目录(如下：进入bin目录)
+1$ cd bin
+4）返回到上层目录
+1$ cd ..
+5）返回上上层目录(中间没用空格)
+1$ cd ../..">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +111,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-bash终端相关" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-bash终端相关" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/26/bash终端相关/" class="article-date">
   <time datetime="2017-03-26T08:05:06.000Z" itemprop="datePublished">2017-03-26</time>
@@ -74,8 +124,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/26/bash终端相关/">bash终端相关</a>
+    <h1 class="article-title" itemprop="name">
+      bash终端相关
     </h1>
   
 
@@ -252,142 +302,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-git-相关" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/25/git-相关/" class="article-date">
-  <time datetime="2017-03-25T07:51:50.000Z" itemprop="datePublished">2017-03-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/25/git-相关/">git 相关</a>
-    </h1>
+    <a href="/2017/03/25/git-相关/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">git 相关</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>git --version 查看当前git版本<br>git config --list 查看当前git配置信息<br>git config --list --global git通用配置信息<br>git config user.name 获取单独的配置信息(name)<br>git config user.email 获取单独的配置信息(email)<br>git config --global user.name cxl 配置name<br>git config --global user.eamil xxx@xx.com 配置email<br>git config --global add user.name cxl user.email xx@xx.com 同时配置多个参数<br>git config --global unset user.name cxl 删除配置</p>
-<h2 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h2><p>git config --global alias.st status</p>
-<h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>git init 将一个文件夹设置为git代码仓库<br>git status 查看仓库状态<br>git add <file> 提交文件到暂存区<br>git add . 提交所有改动到暂存区<br>git commit -m “提交说明” 提交到仓库<br>git commit --amend -m “提交说明” 追加修改<br>git log 查看提交记录<br>git reflog 查看提交记录，即使版本已回退<br>git shortlog 根据提交者名字进行分组，显示每个开发者的所有commit记录<br>git diff <file> 查看文件变化<br>git diff 查看所有文件变化<br>git diff HEAD 与上一commit节点的差异<br>git diff HEAD^ 与上上commit节点的差异<br>git blame <file> 追溯一个指定文件的历史修改记录<br>gitk 查看图形化的Log记录<br>git checkout <file> 修改文件之后，git add指令之前，抛弃当前本地所有修改，恢复到上次最后提交版本；执行add指令将代码提交到暂存区后，再修改该文件，然后执行checkout指令，则会将该文件恢复到执行add操作后的初始状态，即恢复add后的所有修改。<br>git reset HEAD <file> 将文件移出暂存区<br>git reset --hard HEAD^ 回退到上一个版本（HEAD^^：上上个版本， HEAD~100：上100个版本）<br>git reset --hard commit id 回退到指定版本版本<br>git rm <file> 删除文件，不需要再执行git add,可直接执行git commit</file></file></file></file></file></file></p>
-<h2 id="文件暂存"><a href="#文件暂存" class="headerlink" title="文件暂存"></a>文件暂存</h2><p>git stash 将当前修改暂存起来<br>git stash list 查看当前暂存的内容<br>git stash apply 内容恢复，不会删除stash记录,git stash list还可以看到记录<br>git stash pop 内容回复，删除stash记录,git stash list看不到记录<br>git stash drop 删除stash记录</p>
-<h2 id="创建SSH-Key"><a href="#创建SSH-Key" class="headerlink" title="创建SSH Key"></a>创建SSH Key</h2><p>ssh-keygen -t rsa -b 4096 -C “your_email@example.com”</p>
-<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><p>git remote add origin git@github.com:xx/gittest.git 关联远程仓库，其中origin就是远程仓库的名字<br>git push -u origin master 推送本地master分支到远程仓库，-u表示将本地master分支与远程master分支关联起来<br>git push 推送到远程仓库<br>git push origin master 推送到远程仓库<br>git pull 拉取最新的代码更新<br>git pull --rebase 拉取最新修改，并且将本地未提交代码作用到最新版本，不会产生多余的Merge Histoey<br>git clone <git地址> 克隆远程仓库到本地</git地址></p>
-<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><p>git checkout -b dev 创建并切换到dev分支<br>git branch dev 创建dev分支<br>git checkout dev 切换到dev分支<br>git branch 列出所有本地分支<br>git branch -r 列出所有远程分支<br>git branch -a 列出所有本地分支和远程分支<br>git merge dev 合并dev分支到master分支<br>git rebase dev 合并dev分支到master分支,git到时间线会被合并<br>git branch -d dev 删除dev分支<br>git branch -D dev 强行删除dev分支<br>git remote 查看远程分支<br>git remote -v 查看远程分支详细信息<br>git push origin dev 将本地dev分支推送到远程origin仓库</p>
-<h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><p>git tag v1 创建tag，默认记录在最后到提交上<br>git tag v1 <commit id=""> 创建tag，指定在commit id上创建<br>git tag -a v1 -m “version1” 创建带有注释说明到tag，-a指定tag名，-m指定注释说明<br>git tag -a v1 -m “version1” <commit id=""> 创建带有注释说明到tag，-a指定tag名，-m指定注释说明，指定在commit id上创建<br>git tag 查看本地tag<br>git show <tag name=""> 查看指定tag的详细信息<br>git tag -d <tag name=""> 删除tag<br>git push origin <tag name=""> 推送本地Tag到远程<br>git oush origin --tags 推送所有本地Tag到远程</tag></tag></tag></commit></commit></p>
-<h3 id="删除远程Tag"><a href="#删除远程Tag" class="headerlink" title="删除远程Tag"></a>删除远程Tag</h3><ul>
-<li>先删除本地tag<br>git tag -d v2</li>
-<li>再重新push到远程<br>git push oigin :refs/tags/v2</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/25/git-相关/" data-id="cj0qlzzk80001sa8fbz2bm42n" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-Mac-快捷键" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/25/Mac-快捷键/" class="article-date">
-  <time datetime="2017-03-25T07:03:23.000Z" itemprop="datePublished">2017-03-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/25/Mac-快捷键/">Mac 快捷键</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Command + ~ 切换同一应用的多个窗口<br>Commond + W 关闭当前窗口<br>Commond + N 新建窗口</p>
-<p>Commond + Shift + 4 自由截图<br>Commond + Shift + 4 + 空格键 截取当前窗口</p>
-<p>Commond + Left/Right 行首行尾<br>Commond + Up/Down 页首页尾<br>Option + Left／Right 按单词移动</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/25/Mac-快捷键/" data-id="cj0qlzzk40000sa8fdzcr0iqn" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/25/hello-world/" class="article-date">
-  <time datetime="2017-03-25T06:43:25.000Z" itemprop="datePublished">2017-03-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/25/hello-world/" data-id="cj0qlzzkc0003sa8fmkod4a23" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
